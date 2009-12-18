@@ -9,7 +9,7 @@ unless defined?(SPEC_ROOT)
   SPEC_ROOT = File.join(File.dirname(__FILE__))
 end
 
-environment = File.expand_path('../../vendor/gems/environment')
+environment = File.expand_path('../../vendor/gems/environment', __FILE__)
 if File.exist?("#{environment}.rb")
   require environment
 else
